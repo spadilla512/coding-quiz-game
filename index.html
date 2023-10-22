@@ -8,7 +8,43 @@
 </head>
 
 <body>
-    <header>Quiz Game</header>
+    <header class="header">
+        <span id="highscore">View Highscores</span>
+        <span id="countdown">Time: 60 seconds</span>
+    </header>
+
+    <main>
+        <section class="javascript">
+            <h1 class="javascript">Coding Quiz Challenge</h1>
+            <p class="prompt">Try to answer the following code-related questions within the time limit.
+            Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+            </p>
+            <button class="start-button">Start Quiz</button>
+        </section>
+
+        <section class="quiz">
+            <h3 class="questions"></h3>
+                <button class="option1"></button>
+                <button class="option2"></button>
+                <button class="option3"></button>
+                <button class="option4"></button>
+
+                <span id="correct-incorrect"></span>
+        </section>
+
+        <section class="initials">
+            <h3>All done!</h3>
+                <p>Enter Initials:</p>
+                <input type="text" id="initials" name="initials"><br>
+                <button class="submit">Submit</button>
+        </section>
+
+        <section class="score">
+            <h3 class="highscores">High Scores</h3>
+                <button class="go-back">Go Back</button>
+                <button class="clear-highscores">Clear Highscores</button>
+        </section>
+    </main>
 
     <script src="./assets/script.js"></script>
     
