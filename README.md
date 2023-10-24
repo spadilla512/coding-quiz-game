@@ -14,7 +14,7 @@ The opening page will have a title of "Coding Quiz Challenge" with a prompt that
 
 ![Alt text](assets/images/image.png)
 
-Link of Deployment: 
+Link of Deployment: https://spadilla512.github.io/coding-quiz-game/
 
 ## Credits
 
