@@ -8,41 +8,45 @@
 </head>
 
 <body>
-    <header class="header">
-        <span id="highscore">View Highscores</span>
-        <span id="timer-count">Time: 60 seconds</span>
+    <header>
+        <a href="#scoreSheet">View Highscores</a> 
+        <div id="timer">Time: 0</div>
     </header>
 
     <main>
-        <section class="coding">
-            <h1 class="coding">Coding Quiz Challenge</h1>
+        <div id="coding" class="coding">
+            <h1>Coding Quiz Challenge</h1>
             <p class="prompt">Try to answer the following code-related questions within the time limit.
             Keep in mind that incorrect answers will penalize your score/time by ten seconds!
             </p>
-            <button class="start-button">Start Quiz</button>
-        </section>
+            <button class="start-quiz">Start Quiz</button>
+        </div>
 
         <section class="quiz">
-            <h3 class="questions"></h3>
-                <button class="trigger option1"></button>
-                <button class="trigger option2"></button>
-                <button class="trigger option3"></button>
-                <button class="trigger option4"></button>
-
-                <span id="right-wrong"></span>
+            <h3 class="askQuestions"></h3>
+            <div id="options">
+                <div class="option1"></div>
+                <div class="option2"></div>
+                <div class="option3"></div>
+                <div class="option4"></div>
+            </div>
         </section>
 
-        <section class="initials">
-            <h3>All done!</h3>
-                <p>Enter Initials:</p>
-                <input type="text" id="initials" name="initials"><br>
-                <button class="submit-button">Submit</button>
-        </section>
+        <div class="right">Right!</div>
+        <div class="wrong">Wrong!</div>
 
-        <section class="score">
-            <h3 class="highscores">High Scores</h3>
-                <button class="trigger go-back">Go Back</button>
-                <button class="trigger clear-highscores">Clear Highscores</button>
+        <div class="initial-section">
+            <h3>All Done!</h3>
+            <div class="final-score"></div>
+            <div>Enter Initials:</div><input type="text" name="initials" id="initials">
+            <button class="submit-button">Submit</button> 
+        </div>
+
+        <section id="scoreSheet">
+            <h3>Highscores</h3>
+            <ol id="scoredata"></ol>
+            <button class="reset">Go Back</button>
+            <button class="clear">Clear Highscores</button>
         </section>
     </main>
 
